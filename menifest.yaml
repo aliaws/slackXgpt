@@ -1,0 +1,35 @@
+_metadata:
+  major_version: 1
+  minor_version: 1
+display_information:
+  name: ManifestAppYT
+  description: Hello world, Youtube
+features:
+  app_home:
+    home_tab_enabled: true
+    messages_tab_enabled: true
+    messages_tab_read_only_enabled: false
+  bot_user:
+    display_name: BotYT
+    always_online: true
+  slash_commands:
+    - description: Some Bot App Command description
+      command: /test-command
+      url: https://groovy-positive-attempt.glitch.me/slack/events
+oauth_config:
+  scopes:
+    bot:
+      - commands
+      - chat:write
+      - chat:write.public
+settings:
+  event_subscriptions:
+    request_url: https://groovy-positive-attempt.glitch.me/slack/events
+    bot_events:
+      - app_home_opened
+  interactivity:
+    is_enabled: true
+    request_url: https://groovy-positive-attempt.glitch.me/slack/events
+  org_deploy_enabled: false
+  socket_mode_enabled: false
+  token_rotation_enabled: false
